@@ -12,7 +12,10 @@ public class TravelDetails {
         public LocalTime depature = LocalTime.now();
         public LocalTime arrival = LocalTime.now();
 
-    public TravelDetails(Object o, String name, String plate) {
+    public TravelDetails(Long id, String name, String plate) {
+        this.id=id;
+        this.name=name;
+        this.plate=plate;
     }
 
 }
