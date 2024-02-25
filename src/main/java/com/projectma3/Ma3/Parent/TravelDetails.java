@@ -5,6 +5,7 @@ import java.time.LocalTime;
 public class TravelDetails {
 
        protected Long id;
+
        protected String name;
        protected String plate;
         public  String source = "Chuka";
@@ -15,6 +16,11 @@ public class TravelDetails {
     public TravelDetails(Long id, String name, String plate) {
         this.id=id;
         this.name=name;
+        this.plate=plate;
+    }
+
+    public TravelDetails(Long id,String plate){
+        this.id=id;
         this.plate=plate;
     }
 

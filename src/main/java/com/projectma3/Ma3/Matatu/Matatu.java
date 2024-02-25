@@ -4,10 +4,12 @@ import com.projectma3.Ma3.Parent.TravelDetails;
 
 public class Matatu extends TravelDetails {
     public Integer capacity;
-    public String Driver;
+    public String driver;
 
-    public Matatu(Long id, String plate, String name){
-        super(id,plate,name);
+    public Matatu(Long id, String plate, Integer capacity, String driver){
+        super(id,plate);
+        this.capacity=capacity;
+        this.driver=driver;
     }
 
     public Integer getCapacity() {
@@ -19,11 +21,11 @@ public class Matatu extends TravelDetails {
     }
 
     public String getDriver() {
-        return Driver;
+        return driver;
     }
 
     public void setDriver(String driver) {
-        Driver = driver;
+        driver = driver;
     }
 
     public Long getId(){
