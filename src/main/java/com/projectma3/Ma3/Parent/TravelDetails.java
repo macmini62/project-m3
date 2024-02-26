@@ -3,15 +3,13 @@ package com.projectma3.Ma3.Parent;
 import java.time.LocalTime;
 
 public class TravelDetails {
-
-       protected Long id;
-
-       protected String name;
-       protected String plate;
-        public  String source = "Chuka";
-        public String destination = "Nairobi";
-        public LocalTime depature = LocalTime.now();
-        public LocalTime arrival = LocalTime.now();
+    protected Long id;
+    protected String name;
+    protected String plate;
+    protected String source = "Chuka";
+    protected String destination = "Nairobi";
+    protected LocalTime depature = LocalTime.now();
+    protected LocalTime arrival = LocalTime.now();
 
     public TravelDetails(Long id, String name, String plate) {
         this.id=id;

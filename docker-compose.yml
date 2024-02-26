@@ -1,0 +1,22 @@
+services:
+  db:
+    container_name: project-ma3
+    image: postgres
+    environment:
+      POSTGRES_USER: mac62
+      POSTGRES_PASSWORD: ~@292003@~
+      PGDATA: /data/postgres
+    volumes:
+      - db:/data/postgres
+    ports:
+      - "5334:5434"
+    networks:
+      - db
+    restart: unless-stopped
+
+networks:
+  db:
+    driver: bridge
+
+volumes:
+  db:
