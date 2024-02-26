@@ -24,4 +24,8 @@ public class TravelDetails {
         this.plate=plate;
     }
 
+    public TravelDetails(String name){
+        this.name=name;
+    }
+
 }
